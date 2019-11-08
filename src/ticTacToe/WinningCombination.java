@@ -14,7 +14,7 @@ public class WinningCombination {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("Hello world 212121!");
+		System.out.println("Hello world 212121x!");
 	}
 		
 	private int id;
@@ -64,7 +64,7 @@ public class WinningCombination {
 	}
 
 	
-	public Tile getUnobstructedTwoInARow(String value)
+	public Tile getUnobstructedCanBeTwoInARow(String value)
 	{
 		int possibleWin = 0;
 		if (value == "x")
