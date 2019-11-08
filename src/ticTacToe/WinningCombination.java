@@ -5,8 +5,9 @@ package ticTacToe;
 
 import java.util.*;
 
+
 /**
- * @author grego
+ * @author grego and now the big test!
  *
  */
 public class WinningCombination {
