@@ -3,8 +3,10 @@
  */
 package ticTacToe;
 
+import java.util.*;
+
 /**
- * @author grego
+ * @author grego 200
  *
  */
 public class WinningCombination {
@@ -12,12 +14,17 @@ public class WinningCombination {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("Hello world 212121!");
-		
+	}
 		
 	private int id;
 	private Tile positionOne;
 	private Tile PositionTwo;
 	private Tile PositionThree;
+	
+	public WinningCombination()
+	{
+		
+	}
 	
 	public WinningCombination (int id, Tile one, Tile two, Tile three)
 	{
