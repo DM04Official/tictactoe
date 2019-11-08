@@ -4,6 +4,7 @@ package ticTacToe;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 import javax.swing.*;
 
@@ -16,8 +17,8 @@ public class Board implements ActionListener {
 	JPanel boardPanel = new JPanel();
 	GridLayout box = new GridLayout(3,3);
 	
-	JButton one = new JButton();
-	JButton two = new JButton();
+	 static JButton one = new JButton();
+	static JButton two = new JButton();
 	JButton three = new JButton();
 	JButton four = new JButton();
 	JButton five = new JButton();
@@ -28,6 +29,11 @@ public class Board implements ActionListener {
 	
 	int turn = 1;
 	String letterTurn = "X";
+	
+	
+	ArrayList<Tile> allTiles = new ArrayList<Tile>();
+	ArrayList<Tile> winningCombinations = new ArrayList<Tile>();
+	//Tile a1 = new Tile();
 	
 	public static void main(String args[])
 	{
@@ -42,7 +48,6 @@ public class Board implements ActionListener {
 		mainFrame.setTitle("TicTacToe");
 		
 		boardPanel.setLayout(box);
-		//hey
 		boardPanel.add(one);
 		one.addActionListener(this);
 		boardPanel.add(two);
@@ -69,39 +74,15 @@ public class Board implements ActionListener {
 		
 	}
 	@Override
+	
+	
 	public void actionPerformed(ActionEvent ouch) {
 		letterTurn = getLetterTurn();
+		Gameplay game = new Gameplay();
+		
+		boxClicked(game.doGameplay(ouch));
 		System.out.println(letterTurn);
-		if(ouch.getSource() == one)
-		{
-			
-			boxClicked(one);
-			
-		} else if(ouch.getSource() == two)
-		{
-			boxClicked(two);
-		} else if(ouch.getSource() == three)
-		{
-			boxClicked(three);
-		} else if(ouch.getSource() == four)
-		{
-			boxClicked(four);
-		} else if(ouch.getSource() == five)
-		{
-			boxClicked(five);
-		} else if(ouch.getSource() == six)
-		{
-			boxClicked(six);
-		} else if(ouch.getSource()== seven)
-		{
-			boxClicked(seven);
-		} else if(ouch.getSource() == eight)
-		{
-			boxClicked(eight);
-		} else if(ouch.getSource() == nine)
-		{
-			boxClicked(nine);
-		}
+
 	}
 	private void boxClicked(JButton a) {
 		a.setText(letterTurn);
