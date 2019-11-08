@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.dm04.logic;
+package ticTacToe;
 
 /**
  * @author grego
@@ -9,6 +9,11 @@ package com.dm04.logic;
  */
 public class WinningCombination {
 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Hello world 212121!");
+		
+		
 	private int id;
 	private Tile positionOne;
 	private Tile PositionTwo;
@@ -31,13 +36,13 @@ public class WinningCombination {
 	
 	public Tile rowNextToWin(String value) // set to x or o.  Use this first to test for my win and then to test for their next win.
 	{
-		int sum = 0;
+		int almostAWin = 0;
 		if (value == "x")
-				sum = 2;
+			almostAWin = 2;
 		if (value == "o")
-			sum = 200;
+			almostAWin= 200;
 		
-		if(this.positionOne.getValue() + this.PositionTwo.getValue() + this.PositionThree.getValue() == sum) 
+		if(this.positionOne.getValue() + this.PositionTwo.getValue() + this.PositionThree.getValue() == almostAWin) 
 		{
 			if(this.positionOne.getValue() == 0)
 				return this.positionOne;
@@ -50,6 +55,29 @@ public class WinningCombination {
 		return null; 
 	}
 
+	
+	public Tile getUnobstructedTwoInARow(String value)
+	{
+		int possibleWin = 0;
+		if (value == "x")
+			possibleWin = 1;
+		if (value == "o")
+			possibleWin= 100;
+		
+		if(this.positionOne.getValue() + this.PositionTwo.getValue() + this.PositionThree.getValue() == possibleWin) 
+		{
+			if(this.positionOne.getValue() == 0)
+				return this.positionOne;
+			if (this.PositionThree.getValue() == 0)
+				return this.getPositionThree();
+		//	if(this.PositionTwo.getValue() == 0 )  **In therory, this should never run anyway
+		//		return this.getPositionTwo();
+		}
+			
+		return null;
+		jkl
+				
+	}
 	
 	
 	
