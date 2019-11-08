@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.dm04.logic;
+package ticTacToe;
 
 /**
  * @author grego
