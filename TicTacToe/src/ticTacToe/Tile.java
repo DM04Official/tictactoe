@@ -4,7 +4,7 @@
 package ticTacToe;
 
 /**
- * @author grego
+ * @author grego the great
  *
  */
 public class Tile {
