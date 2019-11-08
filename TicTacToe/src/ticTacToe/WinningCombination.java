@@ -53,7 +53,7 @@ public class WinningCombination {
 	
 	public Tile getObstructedTwoInARow(String value)
 	{
-		asdfasf 
+		 
 	}
 	
 	

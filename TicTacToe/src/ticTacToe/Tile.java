@@ -25,7 +25,7 @@ public class Tile {
 		this.value = 0;	
 	}
 
-asdfasdf 	
+
 	
 	
 	public int getId() {
