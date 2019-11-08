@@ -4,7 +4,7 @@
 package ticTacToe;
 //jahkfjasdnfmasjhfjk
 /**
- * @author NATHAN
+ * @author grego
  *
  */
 public class Tile {
@@ -25,7 +25,7 @@ public class Tile {
 		this.value = 0;	
 	}
 
-	
+asdfasdf 	
 	
 	
 	public int getId() {

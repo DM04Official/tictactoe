@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.dm04.logic;
+package ticTacToe;
 
 /**
  * @author grego
@@ -31,13 +31,13 @@ public class WinningCombination {
 	
 	public Tile rowNextToWin(String value) // set to x or o.  Use this first to test for my win and then to test for their next win.
 	{
-		int sum = 0;
+		int almostAWin = 0;
 		if (value == "x")
-				sum = 2;
+			almostAWin = 2;
 		if (value == "o")
-			sum = 200;
+			almostAWin= 200;
 		
-		if(this.positionOne.getValue() + this.PositionTwo.getValue() + this.PositionThree.getValue() == sum) 
+		if(this.positionOne.getValue() + this.PositionTwo.getValue() + this.PositionThree.getValue() == almostAWin) 
 		{
 			if(this.positionOne.getValue() == 0)
 				return this.positionOne;
@@ -50,6 +50,11 @@ public class WinningCombination {
 		return null; 
 	}
 
+	
+	public Tile getObstructedTwoInARow(String value)
+	{
+		asdfasf 
+	}
 	
 	
 	
