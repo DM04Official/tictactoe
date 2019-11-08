@@ -1,6 +1,6 @@
 
 package ticTacToe;
-//bye
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -42,7 +42,7 @@ public class Board implements ActionListener {
 		mainFrame.setTitle("TicTacToe");
 		
 		boardPanel.setLayout(box);
-		
+		//hey
 		boardPanel.add(one);
 		one.addActionListener(this);
 		boardPanel.add(two);
@@ -114,7 +114,7 @@ public class Board implements ActionListener {
 		
 	}
 	private String getLetterTurn() {
-		if(turn == 1) {return("X");} else { return("O");}
+		if(turn == 1) {return("x");} else { return("o");}
 		
 	}
 }
